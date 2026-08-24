@@ -41,9 +41,9 @@ The notebook includes:
 - construction and diagonalization of the fluxonium Hamiltonian;
 - convergence of the $$0\rightarrow1\$$ transition frequency with basis cutoff;
 - convergence across external magnetic flux;
-- state-dependent convergence of \(E_k-E_0\);
+- state-dependent convergence of $$E_k-E_0$$;
 - determination of the minimum persistently converged basis cutoff;
-- validation against the analytically solvable \(E_J=0\) harmonic limit;
+- validation against the analytically solvable $$E_J=0$$ harmonic limit;
 - comparison with the independent `scqubits` implementation;
 - calculation of the low-lying fluxonium energy spectrum.
 
@@ -69,7 +69,7 @@ Two independent checks are included.
 
 ### Harmonic limit
 
-Setting \(E_J=0\) removes the nonlinear Josephson contribution. The Hamiltonian becomes an exactly solvable harmonic oscillator with relative eigenenergies
+Setting $$E_J=0$$ removes the nonlinear Josephson contribution. The Hamiltonian becomes an exactly solvable harmonic oscillator with relative eigenenergies
 
 $$
 E_k-E_0 = k\sqrt{8E_CE_L}.
@@ -81,7 +81,7 @@ The numerical results are compared directly with this analytical expression.
 
 The custom Hamiltonian implementation is also compared with the `Fluxonium` class from [`scqubits`](https://scqubits.readthedocs.io/).
 
-Identical values of \(E_J\), \(E_C\), \(E_L\), external flux, and basis cutoff are supplied to both implementations, allowing the matrix construction and flux convention to be independently cross-checked.
+Identical values of $$E_J$$, $$E_C$$, $$E_L$$, external flux, and basis cutoff are supplied to both implementations, allowing the matrix construction and flux convention to be independently cross-checked.
 
 ## Repository Contents
 
