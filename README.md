@@ -39,7 +39,7 @@ The main purpose of the project is to determine how large \(N\) must be before t
 The notebook includes:
 
 - construction and diagonalization of the fluxonium Hamiltonian;
-- convergence of the \(0\rightarrow1\) transition frequency with basis cutoff;
+- convergence of the $$0\rightarrow1\$$ transition frequency with basis cutoff;
 - convergence across external magnetic flux;
 - state-dependent convergence of \(E_k-E_0\);
 - determination of the minimum persistently converged basis cutoff;
