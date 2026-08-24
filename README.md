@@ -8,15 +8,9 @@ This project examines the numerical convergence of the fluxonium Hamiltonian whe
 
 The fluxonium Hamiltonian is represented as
 
-\[
-\hat{H}
-=
-4E_C\hat{n}^2
-+
-\frac{1}{2}E_L\hat{\phi}^2
--
-E_J\cos(\hat{\phi}-2\pi f),
-\]
+$$
+\hat{H} = 4E_C\hat{n}^2 + \frac{1}{2}E_L\hat{\phi}^2 - E_J\cos(\hat{\phi}-2\pi f),
+$$
 
 where
 
