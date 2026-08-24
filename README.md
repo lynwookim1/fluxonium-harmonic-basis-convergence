@@ -14,31 +14,21 @@ $$
 
 where
 
-\[
+$$
 f=\frac{\Phi_{\mathrm{ext}}}{\Phi_0}.
-\]
+$$
 
 Using the harmonic part of the circuit as the basis Hamiltonian gives
 
-\[
-\hat{H}_0
-=
-\sqrt{8E_CE_L}
-\left(
-\hat{a}^{\dagger}\hat{a}
-+
-\frac{1}{2}
-\right),
-\]
+$$
+\hat{H}_0 = \sqrt{8E_CE_L}\left(\hat{a}^{\dagger}\hat{a} + \frac{1}{2}\right),
+$$
 
 with phase operator
 
-\[
-\hat{\phi}
-=
-\left(\frac{2E_C}{E_L}\right)^{1/4}
-(\hat{a}+\hat{a}^{\dagger}).
-\]
+$$
+\hat{\phi} = \left(\frac{2E_C}{E_L}\right)^{1/4}(\hat{a}+\hat{a}^{\dagger}).
+$$
 
 The infinite harmonic-oscillator basis is truncated to a finite dimension \(N\), and the resulting Hamiltonian matrix is diagonalized numerically.
 
@@ -59,15 +49,15 @@ The notebook includes:
 
 A reference calculation with
 
-\[
+$$
 N_{\mathrm{ref}}=200
-\]
+$$
 
 is used to estimate basis-truncation error. The default convergence threshold in the notebook is
 
-\[
+$$
 \epsilon < 10^{-3}\ \mathrm{GHz} = 1\ \mathrm{MHz}.
-\]
+$$
 
 Because the convergence error is not necessarily monotonic, the minimum cutoff is defined using **persistent convergence**: all subsequently tested cutoffs must remain below the specified tolerance.
 
@@ -81,11 +71,9 @@ Two independent checks are included.
 
 Setting \(E_J=0\) removes the nonlinear Josephson contribution. The Hamiltonian becomes an exactly solvable harmonic oscillator with relative eigenenergies
 
-\[
-E_k-E_0
-=
-k\sqrt{8E_CE_L}.
-\]
+$$
+E_k-E_0 = k\sqrt{8E_CE_L}.
+$$
 
 The numerical results are compared directly with this analytical expression.
 
