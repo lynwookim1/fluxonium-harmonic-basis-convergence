@@ -21,23 +21,13 @@ $$
 Using the harmonic part of the circuit as the basis Hamiltonian gives
 
 $$
-\hat{H}_0
-=
-\sqrt{8E_CE_L}
-\left(
-\hat{a}^{\dagger}\hat{a}
-+
-\frac{1}{2}
-\right),
+\hat{H}_0 = \sqrt{8E_CE_L}\left(\hat{a}^{\dagger}\hat{a} + \frac{1}{2}\right),
 $$
 
 with phase operator
 
 $$
-\hat{\phi}
-=
-\left(\frac{2E_C}{E_L}\right)^{1/4}
-(\hat{a}+\hat{a}^{\dagger}).
+\hat{\phi} = \left(\frac{2E_C}{E_L}\right)^{1/4}(\hat{a}+\hat{a}^{\dagger}).
 $$
 
 The infinite harmonic-oscillator basis is truncated to a finite dimension \(N\), and the resulting Hamiltonian matrix is diagonalized numerically.
@@ -68,9 +58,7 @@ is used to estimate basis-truncation error. The stability of this reference cuto
 The default convergence threshold is
 
 $$
-\epsilon < 10^{-3}\ \mathrm{GHz}
-=
-1\ \mathrm{MHz}.
+\epsilon < 10^{-3}\ \mathrm{GHz} = 1\ \mathrm{MHz}.
 $$
 
 Because the convergence error is not necessarily monotonic, the minimum cutoff is defined using **persistent convergence**: all subsequently tested cutoffs must remain below the specified tolerance.
@@ -86,9 +74,7 @@ Two independent checks are included.
 Setting \(E_J=0\) removes the nonlinear Josephson contribution. The Hamiltonian becomes an exactly solvable harmonic oscillator with relative eigenenergies
 
 $$
-E_k-E_0
-=
-k\sqrt{8E_CE_L}.
+E_k-E_0 = k\sqrt{8E_CE_L}.
 $$
 
 The numerical results are compared directly with this analytical expression.
@@ -97,7 +83,7 @@ The numerical results are compared directly with this analytical expression.
 
 The custom Hamiltonian implementation is also compared with the `Fluxonium` class from [scqubits](https://scqubits.readthedocs.io/en/latest/guide/qubits/fluxonium.html).
 
-Identical values of \(E_J\), \(E_C\), \(E_L\), external flux, and basis cutoff are supplied to both implementations. Agreement between the resulting spectra provides an independent cross-check of the Hamiltonian matrix construction, flux-dependent spectrum, and numerical diagonalization.
+Identical values of $$E_J$$, \(E_C\), \(E_L\), external flux, and basis cutoff are supplied to both implementations. Agreement between the resulting spectra provides an independent cross-check of the Hamiltonian matrix construction, flux-dependent spectrum, and numerical diagonalization.
 
 This comparison does not by itself distinguish between sign-equivalent external-flux conventions and does not replace the separate basis-convergence analysis.
 
