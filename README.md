@@ -53,7 +53,7 @@ $$
 N_{\mathrm{ref}}=200
 $$
 
-is used to estimate basis-truncation error. The stability of this reference cutoff is checked by comparing the first four relative eigenenergies at \(N=150\), \(200\), \(250\), and \(300\) over the same external-flux range used in the convergence analysis.
+is used to estimate basis-truncation error. The stability of this reference cutoff is checked by comparing the first four relative eigenenergies at $$N=150$$, $$200$$, $$250$$, and $$300$$ over the same external-flux range used in the convergence analysis.
 
 The default convergence threshold is
 
@@ -71,7 +71,7 @@ Two independent checks are included.
 
 ### Harmonic Limit
 
-Setting \(E_J=0\) removes the nonlinear Josephson contribution. The Hamiltonian becomes an exactly solvable harmonic oscillator with relative eigenenergies
+Setting $$E_J=0$$ removes the nonlinear Josephson contribution. The Hamiltonian becomes an exactly solvable harmonic oscillator with relative eigenenergies
 
 $$
 E_k-E_0 = k\sqrt{8E_CE_L}.
@@ -83,7 +83,7 @@ The numerical results are compared directly with this analytical expression.
 
 The custom Hamiltonian implementation is also compared with the `Fluxonium` class from [scqubits](https://scqubits.readthedocs.io/en/latest/guide/qubits/fluxonium.html).
 
-Identical values of $$E_J$$, \(E_C\), \(E_L\), external flux, and basis cutoff are supplied to both implementations. Agreement between the resulting spectra provides an independent cross-check of the Hamiltonian matrix construction, flux-dependent spectrum, and numerical diagonalization.
+Identical values of $$E_J$$, $$E_C$$, $$E_L$$, external flux, and basis cutoff are supplied to both implementations. Agreement between the resulting spectra provides an independent cross-check of the Hamiltonian matrix construction, flux-dependent spectrum, and numerical diagonalization.
 
 This comparison does not by itself distinguish between sign-equivalent external-flux conventions and does not replace the separate basis-convergence analysis.
 
