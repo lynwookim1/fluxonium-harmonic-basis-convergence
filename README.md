@@ -30,9 +30,9 @@ $$
 \hat{\phi} = \left(\frac{2E_C}{E_L}\right)^{1/4}(\hat{a}+\hat{a}^{\dagger}).
 $$
 
-The infinite harmonic-oscillator basis is truncated to a finite dimension \(N\), and the resulting Hamiltonian matrix is diagonalized numerically.
+The infinite harmonic-oscillator basis is truncated to a finite dimension $$N$$, and the resulting Hamiltonian matrix is diagonalized numerically.
 
-The main purpose of the project is to determine how large \(N\) must be before the calculated low-energy spectrum is numerically stable.
+The main purpose of the project is to determine how large $$N$$ must be before the calculated low-energy spectrum is numerically stable.
 
 ## Analysis
 
